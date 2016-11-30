@@ -1,0 +1,171 @@
+@import "variables";
+
+.sites-menu{
+  display: flex;
+  flex-direction: column;
+  font-family: $main-font;
+  color: $main-font-color;
+  width: 75%;
+  margin: -60px auto;
+}
+
+.sites-menu__header{
+  color: $logo-font-color;
+  padding: 0;
+  margin: 0;
+
+  &--primary{
+    font-weight: 500;
+    font-size: 2.5em;
+  }
+
+  &--secondary{
+    font-weight: 300;
+  }
+}
+
+.line{
+  border: 1px solid $line-color;
+  width: 100%;
+}
+
+/*Sites-grid block*/
+
+.sites-grid{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-family: $main-font;
+  width: 100%;
+  margin: 0;
+  border-top: 1px solid $line-color;
+  padding-top: 12px;
+}
+
+.sites-grid__item{
+  display: flex;
+  flex-flow: row wrap;
+  width: 27.3%;
+  padding: 30px 15px 25px 30px;
+  margin: 3px auto;
+  border: 1px solid $grid-item-border-color;
+}
+
+.sites-grid__item:hover{
+  background-color: $grid-item-hover-color;
+}
+
+.sites-grid__item-desc{
+  color: $main-font-color;
+}
+
+.image-block{
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.image-block__picture{
+  max-width: 140px;
+  height: 55px;
+}
+
+/*Checkboxes*/
+
+.round-checkbox {
+
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+
+.round-checkbox + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  padding: 0;
+  width: 60px;
+  height: 30px;
+  background-color: #dddddd;
+  border-radius: 30px;
+  transition: background 0.4s;
+}
+.round-checkbox + label:before, input.round-checkbox + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+.round-checkbox + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  transition: background 0.4s;
+}
+.round-checkbox + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 22px;
+  background-color: $round-color-unchecked;
+  border-radius: 22px;
+  transition: margin 0.4s, background 0.4s;
+}
+
+.round-checkbox:checked + label:after {
+  margin-left: 30px;
+  background-color: $round-color-checked;
+}
+
+/*Buttons block*/
+
+.buttons-block{
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid $line-color;
+  padding-top: 20px;
+  margin-top: 120px;
+}
+
+
+.button{
+  min-width:28%;
+  height: 50px;
+  border: 1px solid $grid-item-border-color;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0 20px 0 20px;
+  font-family: $main-font;
+  font-size: 1em;
+  font-weight: 500;
+  transition: 0.4s;
+
+  &--ok{
+    width: 50%;
+  }
+
+  &--save, &--ok{
+    background-color: $btn-save-color;
+    color: $body-background-color;
+  }
+
+  &--save:hover, &--ok:hover{
+    background-color: $body-background-color;
+    color: $attention-link-color;
+  }
+  &--unsubscribe{
+    background-color: $body-background-color;
+    margin-left: 10px;
+    color: $attention-link-color;
+
+  }
+  &--unsubscribe:hover{
+    background-color: $btn-save-color;
+    color: $body-background-color;
+  }
+}
+

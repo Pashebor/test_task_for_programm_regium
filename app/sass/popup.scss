@@ -1,0 +1,67 @@
+@import "variables";
+
+.popup-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+}
+
+
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background: $body-background-color;
+  border: 12px solid $container-border-color;
+  outline: 30px solid $body-background-color;
+  width: 39%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup__header{
+  font-size: 4.8em;
+  margin: 0;
+  padding: 0;
+}
+
+.popup__result{
+  margin: 0;
+  font-size: 3em;
+  font-weight: 800;
+
+  &--minus{
+    color: $fun-minus-color;
+  }
+  &--minus::before{
+    content: '-';
+  }
+
+  &--plus{
+    color: $fun-plus-color;
+  }
+
+  &--plus::before{
+    content: '+';
+  }
+
+}
+
+.popup__result-annotation{
+  margin: 0 0 20px 0;
+  color: $fun-meter-header-color;
+}
+
+

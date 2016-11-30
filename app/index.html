@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title of the document</title>
+
+</head>
+<body>
+  <div class="container">
+    <!--LEFT SIDEBAR BLOCK-->
+
+    <aside class="side-bar">
+      <header class="header-logo">
+        <p class="header-logo__text header-logo__text--entertain">Entertain</p>
+        <p class="header-logo__text header-logo__text--me">me</p>
+        <p class="header-logo__text header-logo__text--more">More</p>
+      </header>
+      <section class="fun-block">
+        <h3 class="fun-block__question">How much fun do you want in your life?</h3>
+        <a href="#" rel="author" role="link" class="author">harry.simon@yahoo.com</a>
+        <div class="fun-meter-block">
+           <h5 class="fun-meter-block__header">fun you get</h5>
+          <div class="fun-meter">
+            <progress max="100" value="0"></progress>
+            <div class="fun-meter__value"></div>
+            <div class="fun-meter__bg"><div class="fun-meter__bar"></div></div>
+          </div>
+           <p class="fun-meter-block__subscribe"><a class="attention-link" role="link" href="#">Subscribe</a> to all our fun sites to upgrade your fun progress</p>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <address class="site-footer__address">
+          <p>EntertainMeMore <br> 11807 Westheimer 550 PMB617  Houston, TX 77077</p>
+          <a href="#" role="link" class="attention-link">email@entertainmemore.com</a>
+          <a href="#" role="link" class="attention-link">Privacy Policy</a>
+        </address>
+      </footer>
+    </aside>
+    <!--END LEFT SIDEBAR BLOCK-->
+
+    <!--MAIN BLOCK-->
+    <main class="sites-menu">
+      <header class="sites-menu__header">
+        <h1 class="sites-menu__header--primary">Ok, let’s change your preferences</h1>
+        <h3 class="sites-menu__header--secondary">To unsubscribe, please uncheck the appropriate box(es).</h3>
+      </header>
+      <section class="sites-grid">
+        <div class="sites-grid__item">
+          <figure role="img" class="image-block">
+            <img src="img/trainyrbrain.png" alt="" role="img" class="image-block__picture">
+          </figure>
+          <div class="checkbox-block">
+            <input id="train" class="round-checkbox js" name="trainyrbrain" type="checkbox" role="checkbox">
+            <label for="train"></label>
+          </div>
+          <p class="sites-grid__item-desc">True/False Quiz. Keep your brain fit!</p>
+        </div>
+        <div class="sites-grid__item">
+          <figure role="img" class="image-block">
+            <img src="img/finditquiz.png" alt="" role="img" class="image-block__picture">
+          </figure>
+          <div class="checkbox-block">
+            <input id="find" class="round-checkbox js" type="checkbox" name="finditquiz" role="checkbox">
+            <label for="find"></label>
+          </div>
+          <p class="sites-grid__item-desc">True/False Quiz. Keep your brain fit!</p>
+        </div>
+        <div class="sites-grid__item">
+          <figure role="img" class="image-block">
+            <img src="img/findsuperstar.png" alt="" role="img" class="image-block__picture">
+          </figure>
+          <div class="checkbox-block">
+            <input id="star" class="round-checkbox js" type="checkbox" name="findsuperstar" role="checkbox">
+            <label for="star"></label>
+          </div>
+          <p class="sites-grid__item-desc">True/False Quiz. Keep your brain fit!</p>
+        </div>
+        <div class="sites-grid__item">
+          <figure role="img" class="image-block">
+            <img src="img/ynquiz.png" alt="" role="img" class="image-block__picture">
+          </figure>
+          <div class="checkbox-block">
+            <input id="ynquiz" class="round-checkbox js" type="checkbox" name="ynquiz" role="checkbox">
+            <label for="ynquiz"></label>
+          </div>
+          <p class="sites-grid__item-desc">True/False Quiz. Keep your brain fit!</p>
+        </div>
+        <div class="sites-grid__item">
+          <figure role="img" class="image-block">
+            <img src="img/moviequizonline.png" alt="" role="img" class="image-block__picture">
+          </figure>
+          <div class="checkbox-block">
+            <input id="movie" class="round-checkbox js" type="checkbox" name="moviequizonline" role="checkbox">
+            <label for="movie"></label>
+          </div>
+          <p class="sites-grid__item-desc">True/False Quiz. Keep your brain fit!</p>
+        </div>
+        <div class="sites-grid__item">
+          <figure role="img" class="image-block">
+            <img src="img/whatcountry.png" alt="" role="img" class="image-block__picture" >
+          </figure>
+          <div class="checkbox-block">
+            <input id="what" class="round-checkbox js" type="checkbox" name="whatcountry" role="checkbox">
+            <label for="what"></label>
+          </div>
+          <p class="sites-grid__item-desc">True/False Quiz. Keep your brain fit!</p>
+        </div>
+      </section>
+      <section class="buttons-block" id="button-block">
+        <button class="button button--save js-btn-save" type="button" role="button">Save changes</button>
+        <button class="button button--unsubscribe js-btn-unsubscribe" type="button" role="button">Unsubscribe from all of the above. It’s over</button>
+      </section>
+      <section class="popup-block js-popup">
+        <div class="popup">
+          <h1 class="popup__header">Hurrah!</h1>
+          <h5 class="popup__desc">Your subscription preferences have been successfully saved</h5>
+          <p class="popup__result js-popup-result"></p>
+          <p class="popup__result-annotation js-popup-annotation"></p>
+          <button class="button button--ok js-btn-ok">Ok, great!</button>
+        </div>
+      </section>
+    </main>
+    <!--END MAIN BLOCK-->
+    <!--MOBILE FOOTER -->
+    <footer class="mobile-site-footer">
+      <address class="mobile-site-footer__address">
+        <p>EntertainMeMore <br> 11807 Westheimer 550 PMB617  Houston, TX 77077</p>
+        <a href="#" role="link" class="attention-link">email@entertainmemore.com</a>
+        <a href="#" role="link" class="attention-link">Privacy Policy</a>
+      </address>
+    </footer>
+    <!--END MOBILE FOOTER adfasdf-->
+  </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import "variables";
+
+@media screen and (min-device-width: 100px) and (max-device-width: 600px) {
+  .container{
+    flex-direction: column;
+  }
+
+  .side-bar{
+    width: 100%;
+  }
+  .header-logo{
+    margin-top: 20px;
+  }
+  .fun-block{
+    margin: 0;
+  }
+
+  .fun-block__question{
+    text-align: center;
+  }
+
+  .author{
+    margin-top: 10px;
+  }
+
+  .fun-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fun-meter-block__header{
+    text-align: center;
+  }
+
+  .fun-meter-block__subscribe{
+    text-align: center;
+  }
+
+  .site-footer{
+    display: none;
+  }
+
+  .sites-menu{
+    margin: 0;
+    width: 100%;
+  }
+
+  .sites-menu__header{
+    text-align: center;
+  }
+
+  .sites-menu__header--primary{
+    font-size: 2em;
+  }
+
+  .sites-grid__item{
+    width: 100%;
+    padding: 15px 7px 12px 15px;
+  }
+
+  .buttons-block{
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  .button--unsubscribe{
+    margin: 10px auto;
+  }
+
+  .mobile-site-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    text-align: center;
+  }
+  .button--ok{
+    width: 100%;
+  }
+
+  .popup{
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    background: $body-background-color;
+    border: 6px solid $container-border-color;
+    outline: 15px solid $body-background-color;
+  }
+
+  .popup__header{
+    font-size: 2.4em;
+  }
+
+}

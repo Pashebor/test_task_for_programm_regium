@@ -1,0 +1,13 @@
+@import "variables";
+
+body{
+  background-color: $body-background-color;
+}
+
+.container{
+  border: 12px solid $container-border-color;
+  padding: 8% 4% 4% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

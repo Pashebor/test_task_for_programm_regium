@@ -1,0 +1,26 @@
+[
+  {
+    "site": "trainyrbrain",
+    "subscribed": true
+  },
+  {
+    "site": "ynquiz",
+    "subscribed": true
+  },
+  {
+    "site": "finditquiz",
+    "subscribed": false
+  },
+  {
+    "site": "moviequizonline",
+    "subscribed": true
+  },
+  {
+    "site": "findsuperstar",
+    "subscribed": false
+  },
+  {
+    "site": "whatcountry",
+    "subscribed": false
+  }
+]

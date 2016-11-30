@@ -1,0 +1,174 @@
+@import "variables";
+
+.side-bar{
+  display: flex;
+  flex-direction: column;
+  width: 19%;
+}
+.header-logo{
+  margin-left: -40px;
+  font-family: $logo-font;
+}
+
+
+.header-logo__text{
+  color: $logo-font-color;
+  text-align: center;
+  transform: rotate(-10deg);
+  font-weight: 100;
+  padding: 0;
+  margin: -35px 0 0 0;
+  position: relative;
+  z-index: 2;
+
+  &--entertain{
+    font-size: 5.3em;
+  }
+
+  &--me{
+    font-size: 3.5em;
+    background: url("../img/line.png") no-repeat 50% 45%;
+    transform: rotate(-2deg);
+    position: relative;
+    left: 15px;
+    z-index: 1;
+  }
+
+  &--more{
+    font-size: 6.08em;
+  }
+}
+
+.fun-block{
+  margin-top: 60px;
+  font-family: $main-font;
+  color: $main-font-color;
+}
+
+.fun-block__question{
+  font-weight: 600;
+}
+
+.author{
+  margin: 40px 0 0 0;
+  text-decoration: none;
+  color: $main-font-color;
+}
+
+.author:hover{
+  color: $link-hover-color;
+}
+
+.fun-meter-block{
+  display: flex;
+  flex-direction: column;
+}
+
+.fun-meter-block__header{
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 10px 0 5px 0;
+  color: $fun-meter-header-color;
+}
+
+
+
+@for $i from 0 through 100 {
+  .fun-meter progress[value="#{$i}"]
+  {
+    & + .fun-meter__value:before { content : '#{$i}%' }
+    & ~ .fun-meter__bg .fun-meter__bar { width: $i * 1% }
+  }
+}
+
+.fun-meter{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row-reverse;
+
+  progress{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    left: -777px;
+  }
+}
+
+.fun-meter__value{
+  font-size: 1em;
+  color: $fun-meter__bar-value-color;
+  display: block;
+  line-height: 21px;
+  text-align: right;
+  margin: -20px auto;
+  position: relative;
+  top: 18px;
+}
+
+.fun-meter__bg{
+  background-color: $main-font-color;
+  position: relative;
+  height: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 75%;
+}
+
+@keyframes animate-bar {
+  0%{background-position: 0 0;}
+  100%{background-position: -40px 0;}
+}
+
+.fun-meter__bar {
+  overflow: hidden;
+  background: $fun-meter__bar-value-color;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 1s linear;
+  &:after {
+    animation: animate-bar 0.8s linear infinite;
+
+  }
+}
+
+.fun-meter-block__subscribe{
+  color: $fun-meter-header-color;
+}
+
+.attention-link{
+  text-decoration: none;
+  color: $attention-link-color;
+}
+
+.attention-link:hover{
+  color: $link-hover-color;
+}
+
+.site-footer{
+  margin-top: 60px;
+  font-family: $main-font;
+}
+.site-footer__address{
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  color: $main-font-color;
+  font-size: 0.9em;
+}
+
+.site-footer__address .attention-link:last-child{
+    margin-top: 30px;
+}
+
+.mobile-site-footer{
+  @extend .site-footer;
+  display: none;
+}
+
+.mobile-site-footer__address{
+  @extend .site-footer__address;
+}
